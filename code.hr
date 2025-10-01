@@ -1,0 +1,4 @@
+ye a = 30
+ye b = 30
+ye sum = a + b
+bol sum
