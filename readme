@@ -1,901 +1,182 @@
-🔥 Haryanvi Programming Language
+Haryanvi Programming Language
 Apni Bhasha, Apna Code!
-A fun, educational programming language inspired by Haryanvi culture and language. Perfect for learning programming concepts while having fun with desi syntax!
 
-📚 Table of Contents
+Haryana’s first programming language.
+Where "syntax error" sounds like "Bhai, galat likh diya re!" 😆
 
-Introduction
-Installation
-Language Syntax
-Keywords Reference
-Examples
-How It Works
-Roadmap
-Contributing
+📖 What Is This?
 
+HaryanviLang is a transpiler that turns desi Haryanvi code into JavaScript.
+So tu likh bol "Ram Ram", aur ye JS bana dega console.log("Ram Ram").
 
-🎯 Introduction
-Haryanvi Programming Language is a transpiler that converts Haryanvi-syntax code into JavaScript. It's designed to make programming fun and accessible by using familiar regional language constructs.
-Features ✨
+Simple, fun, aur thoda attitude ke sath! 😎
 
-✅ Variables and data types
-✅ Arithmetic operations (+, -, *, /, %)
-✅ Comparison operators (==, !=, <, >, <=, >=)
-✅ If-else conditions
-✅ While loops
-✅ Comments support
-✅ String and number literals
-✅ Print statements
-
-
-🚀 Installation
-bash# Clone the repository
+⚙️ Setup (10 second ka kaam)
 git clone https://github.com/sanju-vashist/hr-coding.git
-
-# Navigate to directory
 cd haryanvi-lang
-
-# Install dependencies (if any)
 npm install
-
-# Run examples
 node index.js
 
+run command ===> node run.js
 
 
-# 🎓 Haryanvi Programming Language - Complete Tutorial
+Done. Ab tu coder ban gaya. 🎉
+
+🧠 Syntax Samajh Lo Bhai
+Haryanvi Word	Matlab in English
+ye	declare variable
+bol	print something
+jab	if condition
+nahi_toh	else
+jab_tak	while loop
+sahi / galat	true / false
+👋 Hello World
+bol "Ram Ram bhai saryene!"
 
 
----
+Output:
 
-## 📖 Chapter 1: Getting Started (Shuruat)
+Ram Ram bhai saryene!
 
-### Lesson 1.1: Your First Program
-
-Sabse pehla program likhte hain - "Hello World"
-
-```haryanvi
-bol "Ram Ram bahi saryene!"
-```
-
-**What happens?** 
-- `bol` means "say" or "print"
-- It prints whatever you write after it
-
-**Try it yourself:**
-```haryanvi
-bol "Mera naam Vikas hai"
-bol "Main Haryana se hoon"
-```
-
----
-
-### Lesson 1.2: Variables (Cheezein Store Karna)
-
-Variables mein values store karte hain. Jaise dabba mein saman rakhte hain.
-
-```haryanvi
-ye naam = "Rahul"
-ye umar = 25
-```
-
-**Rules:**
-- `ye` keyword se variable banate hain
-- Variable ka naam letters se start hona chahiye
-- Numbers aur underscores use kar sakte ho
-
-**Examples:**
-```haryanvi
-ye student_name = "Priya"
-ye marks = 95
-ye percentage = 89.5
-ye city = "Rohtak"
-```
-
-**Print variables:**
-```haryanvi
+📦 Variables (Apna Dabba)
 ye naam = "Sandeep"
-bol naam          // Prints: Sandeep
-bol "Hello"       // Prints: Hello
-```
+ye umar = 22
+bol naam
 
----
 
-### Lesson 1.3: Comments (Apne liye notes)
+“ye” likhke variable banao, jaise “ye mera phone hai” 📱
 
-Comments code ko samjhne mein help karte hain.
-
-```haryanvi
-// Ye ek comment hai, run nahi hoga
-
-ye age = 30  // Inline comment bhi likh sakte ho
-
-// Ye niche wala code age print karega
-bol age
-```
-
----
-
-## 📊 Chapter 2: Math Operations (Ganit)
-
-### Lesson 2.1: Basic Arithmetic
-
-```haryanvi
+➕ Ganit (Math bhi aave se)
 ye a = 10
 ye b = 5
+bol a + b
+bol a * b
 
-ye sum = a + b       // 15 (jod)
-ye diff = a - b      // 5  (ghata)
-ye prod = a * b      // 50 (guna)
-ye div = a / b       // 2  (bhag)
-ye mod = a % b       // 0  (bacha hua)
 
-bol sum
-bol diff
-bol prod
-bol div
-bol mod
-```
+BODMAS bhi follow karega, bhai ne cheating nahi kari. 😏
 
----
-
-### Lesson 2.2: Order of Operations
-
-Maths ki tarah, programming mein bhi order matter karta hai!
-
-```haryanvi
-ye result1 = 2 + 3 * 4    // First multiply, then add = 14
-ye result2 = (2 + 3) * 4  // Brackets first = 20
-
-bol result1
-bol result2
-```
-
-**Remember BODMAS:**
-- Brackets first
-- Division/Multiplication (left to right)
-- Addition/Subtraction (left to right)
-
----
-
-### Lesson 2.3: Real World Example - Shop Bill
-
-```haryanvi
-// Ek dukan ka bill calculate karte hain
-
-ye item1_price = 100
-ye item2_price = 250
-ye item3_price = 75
-
-ye total = item1_price + item2_price + item3_price
-ye tax = total * 18 / 100
-ye final_bill = total + tax
-
-bol "Total before tax:"
-bol total
-
-bol "Tax (18%):"
-bol tax
-
-bol "Final bill:"
-bol final_bill
-```
-
----
-
-## 🔀 Chapter 3: Decision Making (Faisla Lena)
-
-### Lesson 3.1: Simple If Statement
-
-Sometimes hume condition check karni padti hai.
-
-```haryanvi
-ye temperature = 35
-
-jab (temperature > 30) {
-  bol "Bahut garmi hai!"
-}
-```
-
-**Translation:**
-- `jab` = if (when)
-- Condition brackets `()` mein likhte hain
-- Code curly braces `{}` mein likhte hain
-
----
-
-### Lesson 3.2: If-Else
-
-Dono cases handle karne ke liye:
-
-```haryanvi
+🤔 Faisla Lena (Decision Making)
 ye age = 16
 
 jab (age >= 18) {
-  bol "You can vote!"
+  bol "Vote de sakta hai!"
 } nahi_toh {
-  bol "Too young to vote"
-}
-```
-
-**Translation:**
-- `nahi_toh` = else (otherwise)
-
----
-
-### Lesson 3.3: Multiple Conditions
-
-Jyada options ke liye nested if-else:
-
-```haryanvi
-ye marks = 75
-
-jab (marks >= 90) {
-  bol "Grade: A+"
-} nahi_toh {
-  jab (marks >= 80) {
-    bol "Grade: A"
-  } nahi_toh {
-    jab (marks >= 70) {
-      bol "Grade: B"
-    } nahi_toh {
-      jab (marks >= 60) {
-        bol "Grade: C"
-      } nahi_toh {
-        bol "Grade: F - Fail"
-      }
-    }
-  }
-}
-```
-
----
-
-### Lesson 3.4: Comparison Operators
-
-Different ways to compare:
-
-```haryanvi
-ye a = 10
-ye b = 20
-
-// Equal to (barabar hai)
-jab (a == b) {
-  bol "Equal"
+  bol "Chhoro, abhi school ja!"
 }
 
-// Not equal (barabar nahi)
-jab (a != b) {
-  bol "Not equal"
-}
 
-// Greater than (bada hai)
-jab (a > b) {
-  bol "a is bigger"
-}
+jab = if, nahi_toh = else.
+Seedha logic, bina drama ke.
 
-// Less than (chota hai)
-jab (a < b) {
-  bol "a is smaller"
-}
-
-// Greater than or equal (bada ya barabar)
-jab (a >= 10) {
-  bol "a is 10 or more"
-}
-
-// Less than or equal (chota ya barabar)
-jab (b <= 100) {
-  bol "b is 100 or less"
-}
-```
-
----
-
-### Lesson 3.5: Real Example - Ticket Pricing
-
-```haryanvi
-ye age = 25
-ye ticket_price = 0
-
-jab (age < 5) {
-  ticket_price = 0
-  bol "Free entry for kids under 5"
-} nahi_toh {
-  jab (age < 18) {
-    ticket_price = 50
-    bol "Student price: Rs. 50"
-  } nahi_toh {
-    jab (age >= 60) {
-      ticket_price = 75
-      bol "Senior citizen price: Rs. 75"
-    } nahi_toh {
-      ticket_price = 100
-      bol "Adult price: Rs. 100"
-    }
-  }
-}
-
-bol "Your ticket price:"
-bol ticket_price
-```
-
----
-
-## 🔁 Chapter 4: Loops (Repeat Karna)
-
-### Lesson 4.1: While Loop Basics
-
-Jab tak condition true hai, tab tak code chalega.
-
-```haryanvi
-ye count = 1
-
-jab_tak (count <= 5) {
-  bol count
-  count = count + 1
-}
-```
-
-**Output:**
-```
-1
-2
-3
-4
-5
-```
-
----
-
-### Lesson 4.2: Countdown
-
-```haryanvi
-ye time = 10
-
-jab_tak (time > 0) {
-  bol time
-  time = time - 1
-}
-
-bol "Time up!"
-```
-
----
-
-### Lesson 4.3: Sum of Numbers
-
-1 se 100 tak ke numbers ka sum:
-
-```haryanvi
-ye sum = 0
-ye num = 1
-
-jab_tak (num <= 100) {
-  sum = sum + num
-  num = num + 1
-}
-
-bol "Sum of 1 to 100:"
-bol sum  // Answer: 5050
-```
-
----
-
-### Lesson 4.4: Multiplication Table (Pahada)
-
-```haryanvi
-ye table_of = 7
+🔁 Loop Lagao Bhai (Repeat Karna)
 ye i = 1
-
-bol "Table of 7:"
-
-jab_tak (i <= 10) {
-  ye result = table_of * i
-  bol result
-  i = i + 1
-}
-```
-
-**Output:**
-```
-Table of 7:
-7
-14
-21
-28
-35
-42
-49
-56
-63
-70
-```
-
----
-
-### Lesson 4.5: Pattern Printing
-
-```haryanvi
-// Star pattern banate hain
-ye rows = 5
-ye current_row = 1
-
-jab_tak (current_row <= rows) {
-  ye stars = 1
-  
-  jab_tak (stars <= current_row) {
-    // Note: Pattern printing mein problem hai,
-    // kyunki currently newlines properly handle nahi hote
-    stars = stars + 1
-  }
-  
-  current_row = current_row + 1
-}
-```
-
----
-
-## 🎯 Chapter 5: Practice Problems
-
-### Problem 1: Even or Odd Checker
-
-```haryanvi
-ye number = 42
-ye remainder = number % 2
-
-jab (remainder == 0) {
-  bol "Even number hai"
-} nahi_toh {
-  bol "Odd number hai"
-}
-```
-
----
-
-### Problem 2: Factorial Calculator
-
-```haryanvi
-// 5! = 5 × 4 × 3 × 2 × 1 = 120
-
-ye n = 5
-ye factorial = 1
-ye i = 1
-
-jab_tak (i <= n) {
-  factorial = factorial * i
+jab_tak (i <= 5) {
+  bol i
   i = i + 1
 }
 
-bol "Factorial of 5 is:"
-bol factorial
-```
 
----
+Output:
 
-### Problem 3: Prime Number Checker
+1  
+2  
+3  
+4  
+5  
 
-```haryanvi
-ye num = 29
-ye is_prime = 1  // Assume prime (sahi)
-ye divisor = 2
 
-jab_tak (divisor < num) {
-  ye remainder = num % divisor
-  
-  jab (remainder == 0) {
-    is_prime = 0  // Not prime (galat)
-  }
-  
-  divisor = divisor + 1
-}
+Loop chalega jab tak patience khatam nahi hota. 😅
 
-jab (is_prime == 1) {
-  bol "Prime number hai!"
-} nahi_toh {
-  bol "Prime nahi hai"
-}
-```
+💬 Comments (Bakbak Code Mein)
+// Ye comment hai, chalne ka nahi
+ye marks = 99  // topper spotted
 
----
-
-### Problem 4: Fibonacci Series
-
-```haryanvi
-// 0, 1, 1, 2, 3, 5, 8, 13, 21...
-
-ye n = 10
-ye a = 0
-ye b = 1
-ye i = 0
-
-bol "Fibonacci series:"
-
-jab_tak (i < n) {
-  bol a
-  
-  ye next = a + b
-  a = b
-  b = next
-  
-  i = i + 1
-}
-```
-
----
-
-### Problem 5: Reverse Number
-
-```haryanvi
-ye num = 1234
-ye reversed = 0
-
-jab_tak (num > 0) {
-  ye digit = num % 10
-  reversed = reversed * 10 + digit
-  num = num / 10
-}
-
-bol "Reversed number:"
-bol reversed
-```
-
----
-
-### Problem 6: Sum of Digits
-
-```haryanvi
-ye num = 12345
-ye sum = 0
-
-jab_tak (num > 0) {
-  ye digit = num % 10
-  sum = sum + digit
-  num = num / 10
-}
-
-bol "Sum of digits:"
-bol sum  // 1+2+3+4+5 = 15
-```
-
----
-
-### Problem 7: Power Calculator
-
-```haryanvi
-// Calculate 2^5 (2 to the power 5)
-
-ye base = 2
-ye exponent = 5
-ye result = 1
-ye i = 0
-
-jab_tak (i < exponent) {
-  result = result * base
-  i = i + 1
-}
-
-bol "2 to the power 5:"
-bol result  // 32
-```
-
----
-
-### Problem 8: GCD (Greatest Common Divisor)
-
-```haryanvi
-ye a = 48
-ye b = 18
-
-jab_tak (b != 0) {
-  ye temp = b
-  b = a % b
-  a = temp
-}
-
-bol "GCD is:"
-bol a  // 6
-```
-
----
-
-### Problem 9: Armstrong Number
-
-```haryanvi
-// 153 is Armstrong: 1^3 + 5^3 + 3^3 = 1 + 125 + 27 = 153
-
-ye num = 153
-ye original = num
-ye sum = 0
-
-jab_tak (num > 0) {
-  ye digit = num % 10
-  ye cube = digit * digit * digit
-  sum = sum + cube
-  num = num / 10
-}
-
-jab (sum == original) {
-  bol "Armstrong number hai!"
-} nahi_toh {
-  bol "Armstrong nahi hai"
-}
-```
-
----
-
-### Problem 10: Leap Year Checker
-
-```haryanvi
-ye year = 2024
-ye is_leap = 0
-
-ye check1 = year % 4
-ye check2 = year % 100
-ye check3 = year % 400
-
-jab (check1 == 0) {
-  jab (check2 == 0) {
-    jab (check3 == 0) {
-      is_leap = 1
-    }
-  } nahi_toh {
-    is_leap = 1
-  }
-}
-
-jab (is_leap == 1) {
-  bol "Leap year hai!"
-} nahi_toh {
-  bol "Leap year nahi hai"
-}
-```
-
----
-
-## 🏆 Chapter 6: Mini Projects
-
-### Project 1: Simple Calculator
-
-```haryanvi
-ye num1 = 45
-ye num2 = 15
-ye operation = 1  // 1=add, 2=subtract, 3=multiply, 4=divide
-
-jab (operation == 1) {
-  ye result = num1 + num2
-  bol "Addition:"
-  bol result
-} nahi_toh {
-  jab (operation == 2) {
-    ye result = num1 - num2
-    bol "Subtraction:"
-    bol result
-  } nahi_toh {
-    jab (operation == 3) {
-      ye result = num1 * num2
-      bol "Multiplication:"
-      bol result
-    } nahi_toh {
-      jab (operation == 4) {
-        ye result = num1 / num2
-        bol "Division:"
-        bol result
-      }
-    }
-  }
-}
-```
-
----
-
-### Project 2: Grade System
-
-```haryanvi
-ye student_name = "Rahul Kumar"
-ye marks_math = 85
-ye marks_science = 92
-ye marks_english = 78
-ye marks_social = 88
-ye marks_hindi = 80
-
-ye total = marks_math + marks_science + marks_english + marks_social + marks_hindi
-ye percentage = total / 5
-
-bol "Student Name:"
-bol student_name
-
-bol "Total Marks:"
+🎯 Example: Simple Bill
+ye chai = 10
+ye samosa = 20
+ye total = chai + samosa
+bol "Bill aa gaya bhai:"
 bol total
 
-bol "Percentage:"
-bol percentage
 
-jab (percentage >= 90) {
-  bol "Grade: A+ (Outstanding!)"
+“GST nahi lagaya, tu apna dost hai.” 😄
+
+🧮 Example: Ganit Wali Game
+ye num = 10
+ye sum = 0
+
+jab_tak (num > 0) {
+  sum = sum + num
+  num = num - 1
+}
+
+bol "Total:" 
+bol sum
+
+
+10 se 1 tak jod ke dekh — maths bhi desi ho gaya.
+
+🧑‍🎓 Grade System Example
+ye marks = 85
+
+jab (marks >= 90) {
+  bol "A+ - Bhai top kar gaya!"
 } nahi_toh {
-  jab (percentage >= 80) {
-    bol "Grade: A (Excellent!)"
+  jab (marks >= 60) {
+    bol "Pass ho gaya, mithai lao!"
   } nahi_toh {
-    jab (percentage >= 70) {
-      bol "Grade: B (Very Good)"
-    } nahi_toh {
-      jab (percentage >= 60) {
-        bol "Grade: C (Good)"
-      } nahi_toh {
-        jab (percentage >= 40) {
-          bol "Grade: D (Pass)"
-        } nahi_toh {
-          bol "Grade: F (Fail)"
-        }
-      }
-    }
+    bol "Fail - dobara koshish kar bhai!"
   }
 }
-```
 
----
+🕹 Mini Projects (Thoda Kaam, Thoda Mazak)
+💡 Calculator
+ye a = 10
+ye b = 2
+bol "Add:" 
+bol a + b
 
-### Project 3: Electricity Bill Calculator
-
-```haryanvi
-ye units = 450
+⚡ Electricity Bill
+ye units = 250
 ye bill = 0
-ye surcharge = 0
 
 jab (units <= 100) {
   bill = units * 5
 } nahi_toh {
-  jab (units <= 300) {
-    bill = 100 * 5 + (units - 100) * 7
-  } nahi_toh {
-    bill = 100 * 5 + 200 * 7 + (units - 300) * 10
-  }
+  bill = 100 * 5 + (units - 100) * 7
 }
 
-// Add surcharge if bill > 1000
-jab (bill > 1000) {
-  surcharge = bill * 10 / 100
-  bill = bill + surcharge
-}
-
-bol "Units consumed:"
-bol units
-
-bol "Surcharge:"
-bol surcharge
-
-bol "Total Bill:"
+bol "Bill amount:"
 bol bill
-```
 
----
 
-### Project 4: Number Guessing Game (Simple Version)
+“Bijli board ko bhejna mat, sirf seekhne ke liye hai.” 😜
 
-```haryanvi
-ye secret_number = 42
-ye guess = 50
-ye attempts = 1
+🧠 Practice Karle Thoda
 
-jab (guess == secret_number) {
-  bol "Congratulations! Sahi guess kiya!"
-  bol "Attempts:"
-  bol attempts
-} nahi_toh {
-  jab (guess < secret_number) {
-    bol "Too low! Bada number try kar"
-  } nahi_toh {
-    bol "Too high! Chota number try kar"
-  }
-}
-```
+Even/Odd Check kar
 
----
+Factorial nikal
 
-## 📚 Chapter 7: Tips & Tricks
+Prime number dekh
 
-### Tip 1: Variable Naming
-```haryanvi
-// Good names (achhe naam)
-ye student_age = 20
-ye total_marks = 450
-ye is_passed = 1
+Fibonacci print kar
 
-// Bad names (kharab naam) - avoid
-ye x = 20
-ye abc = 450
-ye t = 1
-```
+GCD, Armstrong, Leap year sab try kar
 
----
+Practice se coder banta hai, jugaad se nahi. 💪
 
-### Tip 2: Code Organization
-```haryanvi
-// Keep related code together
-ye price = 100
-ye quantity = 5
-ye total = price * quantity
+🛠 Contribute Karna Hai?
 
-// Add blank lines for readability
-ye discount = 10
-ye final_price = total - discount
-```
+Repo fork kar
 
----
+Naya feature add kar (functions, arrays, etc.)
 
-### Tip 3: Debugging with Print
-```haryanvi
-ye x = 10
-bol x  // Check value
+PR bhej de — hum “Ram Ram” keh ke merge kar lenge 😄
 
-ye y = x * 2
-bol y  // Verify calculation
+💬 End Mein Ek Baat
 
-ye z = y + 5
-bol z  // Final check
-```
+Programming boring lagti hai?
+Try HaryanviLang — yahan error bhi attitude se aata hai! 😎
 
----
-
-### Tip 4: Start Simple, Build Complex
-```haryanvi
-// First, make it work simply
-ye a = 10
-ye b = 20
-ye sum = a + b
-bol sum
-
-// Then add more features
-ye c = 30
-ye total = a + b + c
-bol total
-```
-
----
-
-## 🎯 Practice Exercises
-
-Try these on your own:
-
-1. **Age in Days**: Convert age in years to days (365 days per year)
-
-2. **Temperature Converter**: Convert Celsius to Fahrenheit and Kelvin
-
-3. **Simple Interest**: Calculate SI given principal, rate, and time
-
-4. **Pattern**: Print numbers 1 to 10 in sequence
-
-5. **Palindrome**: Check if a number is same when reversed
-
-6. **Perfect Number**: Check if sum of divisors equals the number
-
-7. **LCM Calculator**: Find Least Common Multiple of two numbers
-
-8. **Vowel Counter**: Count vowels in a simple way (advanced)
-
----
-
-## 🏁 Conclusion
-
-Congratulations! Ab tum Haryanvi Programming Language ke basics seekh gaye ho!
-
-**What you learned:**
-- Variables and data types
-- Print statements
-- Arithmetic operations
-- If-else conditions
-- While loops
-- Problem solving
-
-**Next Steps:**
-- Practice more programs
-- Try mini projects
-- Wait for new features (functions, arrays)
-- Contribute to the language
-
-**Keep Coding! Haryana Rocks! 🚜💻**
-
----
-
-*Tutorial Version 1.0 | Happy Learning!*
+Keep Coding. Keep Desi. Haryana Rocks 🚜💻
