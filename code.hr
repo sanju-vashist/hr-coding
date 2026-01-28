@@ -1,5 +1,5 @@
-ye count = 1
-jab_tak (count <= 5) {
-    bol count
-    count = count + 1
-}
+ye a = 30
+ye b = 77
+ye c = 12
+ye sum = a + b + c
+bol sum

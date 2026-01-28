@@ -1,182 +1,48 @@
-Haryanvi Programming Language
-Apni Bhasha, Apna Code!
+harvanvi language 
+my idea is to see how the language work at atom leval so i creted this 
 
-Haryana’s first programming language.
-Where "syntax error" sounds like "Bhai, galat likh diya re!" 😆
+flow 
+Haryanvi Code → Lexer → Tokens → Parser → AST → Code Generator → JavaScript → Run
 
-📖 What Is This?
+1️⃣ Haryanvi Code (Source Code)
 
-HaryanviLang is a transpiler that turns desi Haryanvi code into JavaScript.
-So tu likh bol "Ram Ram", aur ye JS bana dega console.log("Ram Ram").
+This is the high-level code written by the programmer using Haryanvi keywords like ye and bol.
+It is human-readable but not understandable by the computer directly.
 
-Simple, fun, aur thoda attitude ke sath! 😎
+2️⃣ Lexer (Lexical Analyzer)
 
-⚙️ Setup (10 second ka kaam)
-git clone https://github.com/sanju-vashist/hr-coding.git
-cd haryanvi-lang
-npm install
-node index.js
+The lexer reads the source code character by character and groups them into meaningful units called tokens.
+It removes whitespace/comments and identifies keywords, identifiers, numbers, and operators.
 
-run command ===> node run.js
+3️⃣ Tokens
 
+Tokens are the smallest meaningful units of a program, such as KEYWORD, IDENTIFIER, NUMBER, and OPERATOR.
+They act as the input for the parser.
 
-Done. Ab tu coder ban gaya. 🎉
+4️⃣ Parser (Syntax Analyzer)
 
-🧠 Syntax Samajh Lo Bhai
-Haryanvi Word	Matlab in English
-ye	declare variable
-bol	print something
-jab	if condition
-nahi_toh	else
-jab_tak	while loop
-sahi / galat	true / false
-👋 Hello World
-bol "Ram Ram bhai saryene!"
+The parser checks the grammatical structure of the token sequence according to language rules.
+It organizes tokens into a structured format called an Abstract Syntax Tree (AST).
 
+5️⃣ AST (Abstract Syntax Tree)
 
-Output:
+AST is a tree representation of program logic, not syntax.
+It shows what the program does, ignoring formatting and unnecessary symbols.
 
-Ram Ram bhai saryene!
+6️⃣ Code Generator
 
-📦 Variables (Apna Dabba)
-ye naam = "Sandeep"
-ye umar = 22
-bol naam
+The code generator traverses the AST and converts it into target code (here, JavaScript).
+It maps high-level constructs to equivalent low-level instructions.
 
+7️⃣ JavaScript Code
 
-“ye” likhke variable banao, jaise “ye mera phone hai” 📱
+This is the generated executable code in JavaScript syntax.
+It performs the same logic as the original Haryanvi program.
 
-➕ Ganit (Math bhi aave se)
-ye a = 10
-ye b = 5
-bol a + b
-bol a * b
+8️⃣ Run (Execution)
 
+The generated JavaScript code is executed by the JS runtime (Node.js).
+The final output is produced and shown to the user.
 
-BODMAS bhi follow karega, bhai ne cheating nahi kari. 😏
-
-🤔 Faisla Lena (Decision Making)
-ye age = 16
-
-jab (age >= 18) {
-  bol "Vote de sakta hai!"
-} nahi_toh {
-  bol "Chhoro, abhi school ja!"
-}
-
-
-jab = if, nahi_toh = else.
-Seedha logic, bina drama ke.
-
-🔁 Loop Lagao Bhai (Repeat Karna)
-ye i = 1
-jab_tak (i <= 5) {
-  bol i
-  i = i + 1
-}
-
-
-Output:
-
-1  
-2  
-3  
-4  
-5  
-
-
-Loop chalega jab tak patience khatam nahi hota. 😅
-
-💬 Comments (Bakbak Code Mein)
-// Ye comment hai, chalne ka nahi
-ye marks = 99  // topper spotted
-
-🎯 Example: Simple Bill
-ye chai = 10
-ye samosa = 20
-ye total = chai + samosa
-bol "Bill aa gaya bhai:"
-bol total
-
-
-“GST nahi lagaya, tu apna dost hai.” 😄
-
-🧮 Example: Ganit Wali Game
-ye num = 10
-ye sum = 0
-
-jab_tak (num > 0) {
-  sum = sum + num
-  num = num - 1
-}
-
-bol "Total:" 
-bol sum
-
-
-10 se 1 tak jod ke dekh — maths bhi desi ho gaya.
-
-🧑‍🎓 Grade System Example
-ye marks = 85
-
-jab (marks >= 90) {
-  bol "A+ - Bhai top kar gaya!"
-} nahi_toh {
-  jab (marks >= 60) {
-    bol "Pass ho gaya, mithai lao!"
-  } nahi_toh {
-    bol "Fail - dobara koshish kar bhai!"
-  }
-}
-
-🕹 Mini Projects (Thoda Kaam, Thoda Mazak)
-💡 Calculator
-ye a = 10
-ye b = 2
-bol "Add:" 
-bol a + b
-
-⚡ Electricity Bill
-ye units = 250
-ye bill = 0
-
-jab (units <= 100) {
-  bill = units * 5
-} nahi_toh {
-  bill = 100 * 5 + (units - 100) * 7
-}
-
-bol "Bill amount:"
-bol bill
-
-
-“Bijli board ko bhejna mat, sirf seekhne ke liye hai.” 😜
-
-🧠 Practice Karle Thoda
-
-Even/Odd Check kar
-
-Factorial nikal
-
-Prime number dekh
-
-Fibonacci print kar
-
-GCD, Armstrong, Leap year sab try kar
-
-Practice se coder banta hai, jugaad se nahi. 💪
-
-🛠 Contribute Karna Hai?
-
-Repo fork kar
-
-Naya feature add kar (functions, arrays, etc.)
-
-PR bhej de — hum “Ram Ram” keh ke merge kar lenge 😄
-
-💬 End Mein Ek Baat
-
-Programming boring lagti hai?
-Try HaryanviLang — yahan error bhi attitude se aata hai! 😎
-
-Keep Coding. Keep Desi. Haryana Rocks 🚜💻
+just download and run using command
+node run.js 
