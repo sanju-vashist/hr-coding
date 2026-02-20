@@ -100,13 +100,18 @@ function codegen(node) {
 
 function runner(input) {
   const tokens = lexer(input);
+
   const ast = parser([...tokens]);  
+
   const jsCode = codegen(ast);
+
+  // console.log(JSON.stringify(ast, null, 2));
+  
+  console.log(jsCode);
+  
   // console.log(`code and the output are \n${jsCode}`);
   // console.log(jsCode);
   eval(jsCode);  
 }
 
 module.exports = { runner };
-
-
