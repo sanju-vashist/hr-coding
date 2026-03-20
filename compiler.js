@@ -105,7 +105,7 @@ function runner(input) {
 
   const jsCode = codegen(ast);
 
-  // console.log(JSON.stringify(ast, null, 2));
+  console.log(JSON.stringify(ast, null, 2));
   
   console.log(jsCode);
   

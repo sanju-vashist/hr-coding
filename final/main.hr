@@ -1,0 +1,17 @@
+ye kamai = 120000
+
+ya to (kamai > 100000) {
+  ye tax = kamai * 0.30
+  bol "30% tax lagega bhai"
+  bol tax
+} nahi to (kamai > 50000) {
+  ye tax = kamai * 0.20
+  bol "20% tax"
+  bol tax
+} nahi to (kamai > 20000) {
+  ye tax = kamai * 0.10
+  bol "10% tax"
+  bol tax
+} nahi fer {
+  bol "Koi tax nahi tera"
+}

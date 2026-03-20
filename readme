@@ -1,5 +1,5 @@
 harvanvi language 
-my idea is to see how the language work at atom leval so i creted this 
+my idea is to see how the language work at atom leval so i created this 
 
 flow 
 Haryanvi Code → Lexer → Tokens → Parser → AST → Code Generator → JavaScript → Run
