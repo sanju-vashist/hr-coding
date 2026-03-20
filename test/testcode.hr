@@ -1,0 +1,54 @@
+je (din) {
+  nahi je 1:
+    bol "Monday"
+    bus
+
+  nahi je 2:
+    bol "Tuesday"
+    bus
+
+  mukhna:
+    bol "Kuch aur din"
+}
+
+
+
+// Tax Calculator  ──
+const taxCalc = `
+ye kamai = 120000
+
+ya to (kamai > 100000) {
+  ye tax = kamai * 0.30
+  bol "Teri kamai badi hai bhai, 30% tax lagega"
+  bol tax
+} nahi to (kamai > 50000) {
+  ye tax = kamai * 0.20
+  bol "Thodi badi kamai, 20% tax"
+  bol tax
+} nahi to (kamai > 20000) {
+  ye tax = kamai * 0.10
+  bol "10% tax lagega"
+  bol tax
+} nahi fer {
+  bol "Chhad de bhai, koi tax nahi"
+}
+`;
+
+
+// Grade calculator ──
+const gradeCalc = `
+ye ank = 85
+
+ya to (ank >= 90) {
+  bol "A grade - Shabash!"
+} nahi to (ank >= 75) {
+  bol "B grade - Theek hai"
+} nahi to (ank >= 60) {
+  bol "C grade - Thoda aur padh"
+} nahi to (ank >= 40) {
+  bol "D grade - Pass ho gaya"
+} nahi fer {
+  bol "Fail - Agli baar mehnat karo"
+}
+`;
+
