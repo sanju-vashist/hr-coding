@@ -107,9 +107,9 @@ function runner(input) {
 
   console.log(JSON.stringify(ast, null, 2));
   
-  console.log(jsCode);
   
-  // console.log(`code and the output are \n${jsCode}`);
+  
+  console.log(`code and the output are \n${jsCode}`);
   // console.log(jsCode);
   eval(jsCode);  
 }
